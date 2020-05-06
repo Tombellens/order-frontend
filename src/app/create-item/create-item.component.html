@@ -1,0 +1,32 @@
+<h2>Create item</h2>
+
+<form class="create-item-container" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="input-container">
+    <p>Name: </p>
+    <input class="input-textbox" formControlName="name" required/>
+  </div>
+
+  <div class="input-container">
+    <p>Description: </p>
+    <textarea class="description-textbox"   [(ngModel)]= "role" [maxLength]="maxChars" formControlName="description" required></textarea>
+    <label> {{role.length}}/{{maxChars}} </label>
+  </div>
+
+  <div class="left-right-container">
+    <div class="input-container">
+      <p>Price(€): </p>
+      <input formControlName="price" required/>
+    </div>
+    <div class="input-container">
+      <p>Stock: </p>
+      <input formControlName="urgency" required/>
+    </div>
+  </div>
+
+  <div class="left-right-container">
+  <button class="create-button" type="submit" [disabled]="!profileForm.valid">CREATE</button>
+
+  <button class="cancel-button">CANCEL</button>
+  </div>
+
+</form>

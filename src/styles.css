@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+
+}
+
+.page{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.header-container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+  height: 150px;
+
+  background-color: white;
+  border-bottom: 2px solid #0063B3;
+}
+
+.logo{
+  height:90%;
+  align-self:center;
+}
+
+
+.body-background-container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body-container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+
+
+/*Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .body-container{
+    margin-left:15%;
+    margin-right:15%;
+
+  }
+
+}
+

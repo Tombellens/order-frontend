@@ -1,0 +1,12 @@
+<div class="new-products-container">
+  <h2>Items</h2>
+  <div class="new-products-boxes-container">
+    <div class="product-box" *ngFor="let item of items">
+      <p class="product-box-name">{{ item.name}}</p>
+      <div class="price-availability-container">
+        <a>Price: {{item.price}}€ </a>
+        <a [ngStyle]="{'color': getColor(item.stockString)}">Stock: {{item.stockString}}</a>
+      </div>
+    </div>
+  </div>
+</div>

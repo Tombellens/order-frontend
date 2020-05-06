@@ -1,0 +1,40 @@
+:host{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.nav-bar-container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-bottom: 10px;
+
+
+
+}
+
+.nav-bar-element{
+ /* border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;*/
+}
+
+.nav-bar-element:hover{
+  font-size: larger;
+
+}
+
+.nav-bar-element-content{
+  margin: 6px;
+}
+
+a{
+  text-decoration:none;
+}
