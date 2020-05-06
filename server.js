@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/ng-order-fe'));
 
 app.get('/*', function(req,res) {
 
-  res.sendFile('index.html', {root: 'dist/ng-order-fe'});
+  res.sendFile('/index.html', {root: 'dist/ng-order-fe/items'});
 });
 
 // Start the app by listening on the default Heroku port
