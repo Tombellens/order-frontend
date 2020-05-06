@@ -25,4 +25,8 @@ export class ItemInfoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+
+  }
+
 }
