@@ -30,6 +30,13 @@ export class ItemService {
       );
   }
 
+  updateItem(item: Item, id: string): Observable<Item> {
+    return this.http.put<Item>(this.itemsUrl + '/' + id, item)
+      .pipe(
+        catchError(this.handleError('updateItem', item))
+      );
+  }
+
   private log(message: string) {
     console.log(message);
   }

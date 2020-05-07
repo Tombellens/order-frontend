@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Injectable, OnInit} from '@angular/core';
 
 import { Item } from '../item';
 import { ItemService } from '../item.service';
@@ -26,7 +26,9 @@ export class ItemsComponent implements OnInit {
     let itemsToReturn = new Array();
     for (let i = 0; i < fetchedItems.length; i++){
       console.log(`${i}`);
-      itemsToReturn.push( new Item(fetchedItems[i].name, fetchedItems[i].description, fetchedItems[i].price, fetchedItems[i].stockUrgency));
+      itemsToReturn.push( new Item(fetchedItems[i].id,
+        fetchedItems[i].name, fetchedItems[i].description, fetchedItems[i].price, fetchedItems[i].stockUrgency,
+        fetchedItems[i].amountOfStock));
     }
     return itemsToReturn;
   }

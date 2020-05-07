@@ -1,10 +1,12 @@
 export class Item {
   stockString: string;
 
-  constructor(public name: string,
+  constructor(public id: string,
+              public name: string,
               public description: string,
               public price: number,
-              public stockUrgency: string){
+              public stockUrgency: string,
+              public amountOfStock: number){
     this.stockString = this.transformStockInputToString(this.stockUrgency);
   }
 

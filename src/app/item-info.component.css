@@ -1,0 +1,74 @@
+.create-item-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-top:10px;
+}
+
+.input-container{
+  margin-bottom: 5px;
+
+  margin-right: 20px;
+}
+
+.input-textbox{
+  width: 600px;
+}
+
+.description-textbox{
+  width: 600px;
+  height: 200px;
+}
+
+.left-right-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.create-button{
+  margin-top: 20px;
+  width: 450px;
+  height: 40px;
+
+  background-color: green;
+  color: white;
+  font-size: large;
+  border: 1px solid darkgray;
+}
+
+.create-button:hover{
+  width: 453px;
+  height: 43px;
+  font-size: x-large;
+}
+
+.cancel-button{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+
+  font-size:large;
+}
+
+.cancel-button:hover{
+  width: 153px;
+  height: 43px;
+
+  font-size: x-large;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 3px solid #a94442; /* red */
+}
+
+.ng-valid:not(form) {
+  border-left: 3px solid green;
+}
+
+.ng-untouched:not(form) {
+  border-left: 3px solid gray;
+}

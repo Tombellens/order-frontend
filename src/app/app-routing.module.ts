@@ -7,7 +7,7 @@ import {CreateItemComponent} from './create-item/create-item.component';
 
 
 const routes: Routes = [
-  {path: 'item-info', component: ItemInfoComponent},
+  {path: 'item-info/:id', component: ItemInfoComponent},
   {path: 'items', component: ItemsComponent},
   {path: '', redirectTo: '/items', pathMatch: 'full'},
   {path: 'create-item', component: CreateItemComponent}
